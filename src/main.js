@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import MyProjects from './components/MyProjects.vue'
 import Home from './components/Home.vue'
@@ -32,17 +32,14 @@ const routes = [
     component: MyContacts
   },
   {
-    
     path: '/:pathMatch(.*)*',
     redirect: '/home'
-  
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
-
 
 createApp(App).use(router).mount('#app')
