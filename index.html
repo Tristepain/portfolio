@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link id="favicon" rel="icon" href="/img/portfolioIcon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        // Liste des chemins vers vos différentes icônes
+        const listeFavicons = [
+          "/img/portfolioIcon1.ico",
+          "/img/portfolioIcon2.ico",
+          "/img/portfolioIcon3.ico"
+        ];
+
+        // Sélection d'un index au hasard
+        const indexAleatoire = Math.floor(Math.random() * listeFavicons.length);
+        
+        // Modification de l'attribut href de la balise link
+        document.getElementById("favicon").href = listeFavicons[indexAleatoire];
+      });
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  </body>
+</html>
