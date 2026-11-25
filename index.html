@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <link id="favicon" rel="icon" href="/img/portfolioIcon.ico">
+    <link id="favicon" rel="icon" href="./img/portfolioIcon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <script>
+      (function () {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+
       window.addEventListener('DOMContentLoaded', () => {
         // Liste des chemins vers vos différentes icônes
         const listeFavicons = [
-          "/img/portfolioIcon1.ico",
-          "/img/portfolioIcon2.ico",
-          "/img/portfolioIcon3.ico"
+          "./img/portfolioIcon1.ico",
+          "./img/portfolioIcon2.ico",
+          "./img/portfolioIcon3.ico"
         ];
 
         // Sélection d'un index au hasard
