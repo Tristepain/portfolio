@@ -8,7 +8,7 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 // Vos liens personnels
-const linkedinUrl = 'https://linkedin.com'
+const linkedinUrl = 'https://www.linkedin.com/in/an-yo-4a4622331/'
 const githubUrl = 'https://github.com/Tristepain'
 const cvPath = '/portfolio/monCV.pdf'
 

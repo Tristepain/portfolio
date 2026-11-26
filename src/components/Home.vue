@@ -11,9 +11,10 @@
       <div class="box">
         <span></span>
         <div class="content">
-          <h2>A propos de moi</h2>
-          <p>Je suis ouvert et je sais travaillé en groupe. 
-            Mes principales qualités sont la patience et l'esprit d'équipe.</p>
+          <h2>À propos de moi</h2>
+          <p>Je suis ouvert et je sais travailler en groupe. 
+            Mes principales qualités sont la patience et l'esprit d'équipe.
+          Je sais me montrer curieux et j'aime apprendre. J'expérimente de mon côté avec des projets et des créations en tout genre.</p>
 
           <router-link to="/myProjects">Mes Projets</router-link>
         </div>
@@ -22,17 +23,19 @@
       <div class="box">
         <span></span>
         <div class="content">
-          <h2>Card two</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#">Read More</a>
+          <h2>Mon objectif</h2>
+          <p>Je suis actuellement à la recherche d'un stage en développement d'applications (web ou logiciel) à partir d'avril 2027, 
+            et je reste ouvert à toute opportunité dans ce domaine. Ci-dessous vous pouvez me contacter.
+          </p>
+          <router-link to="/myContacts">Mes Contacts</router-link>
         </div>
       </div>
 
       <div class="box">
         <span></span>
         <div class="content">
-          <h2>Card Three</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2></h2>
+          <p></p>
           <a href="#">Read More</a>
         </div>
       </div>
