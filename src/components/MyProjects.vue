@@ -23,15 +23,22 @@ const Calculatrice = defineAsyncComponent(() =>
       <div id="calculatrice">
         <h3>Projet Calculatrice :</h3>
         <Calculatrice />
-        <p>J'ai développé cette calculatrice avec du JavaScript et Gemini.
-        Mon programme est constitué de 2 classes (Calculatrice et Afficheur)</p>
+        <p class="info-card">
+          J'ai développé cette calculatrice avec du JavaScript et Gemini.
+          Mon programme est constitué de 2 classes (Calculatrice et Afficheur).
+          Il y a des erreurs notamment pour le deuxième nombre. Qui ne prend que son premier chiffre dans l'opération.
+        </p>
       </div>
+
+      <p class="info-card">
+        D'autres projets sont en cours de développement. Mon projet principal de cette année est trouvable sur
+        <a href="https://github.com/Tristepain/projectSecondYear" target="_blank" rel="noopener noreferrer">ce lien</a>.
+      </p>
     </section>
   </div>
 </template>
 
 <style scoped>
-/* Conteneur de référence harmonisé avec le thème principal */
 .page-container {
   position: relative;
   width: 100%;
@@ -43,7 +50,6 @@ const Calculatrice = defineAsyncComponent(() =>
   box-sizing: border-box;
 }
 
-/* Positionné en haut à droite sans pousser #projects vers le bas */
 #other {
   position: absolute;
   top: 20px;
@@ -56,16 +62,16 @@ const Calculatrice = defineAsyncComponent(() =>
   width: 100%;
 }
 
-/* Commence au même niveau en haut et laisse la calculatrice garder sa largeur */
+/* Empile la calculatrice et le deuxième paragraphe verticalement */
 #projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   padding: 0 20px 40px 20px;
   box-sizing: border-box;
 }
 
-/* Sur écrans étroits (tablettes et mobiles) */
 @media (max-width: 900px) {
   #other {
     position: static;
@@ -82,7 +88,6 @@ const Calculatrice = defineAsyncComponent(() =>
   width: 100%;
 }
 
-/* Titre centré et harmonisé */
 #calculatrice h3 {
   text-align: center;
   font-size: 1.9rem;
@@ -94,8 +99,8 @@ const Calculatrice = defineAsyncComponent(() =>
   text-shadow: 0 2px 10px rgba(14, 116, 144, 0.5);
 }
 
-/* Bulle de texte façon Glassmorphism assortie aux cartes */
-#calculatrice p {
+/* Style commun aux deux bulles de texte */
+.info-card {
   background: rgba(14, 116, 144, 0.2);
   backdrop-filter: blur(12px);
   color: #BAE6FD;
@@ -113,7 +118,18 @@ const Calculatrice = defineAsyncComponent(() =>
   box-sizing: border-box;
 }
 
-/* Carte raccourci Pixel Art */
+/* Lien GitHub visible et assorti au thème */
+.info-card a {
+  color: #22C55E;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.info-card a:hover {
+  color: #4ADE80;
+}
+
 .pixelArt {
   position: relative;
   display: block;
