@@ -3,7 +3,7 @@
     <section id="presentation">
       <div class="text">
         <h1>Bonjour !</h1>
-        <p>Je suis <span class="highlight">X</span> et je suis en <span class="highlight">XXX</span></p>
+        <p>Je suis <span class="highlight">Anis Younes</span> et je suis en <span class="highlight">2ème année de BUT informatique.</span></p>
       </div>
     </section>
 
@@ -11,9 +11,11 @@
       <div class="box">
         <span></span>
         <div class="content">
-          <h2>Card one</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#">Read More</a>
+          <h2>A propos de moi</h2>
+          <p>Je suis ouvert et je sais travaillé en groupe. 
+            Mes principales qualités sont la patience et l'esprit d'équipe.</p>
+
+          <router-link to="/myProjects">Mes Projets</router-link>
         </div>
       </div>
 
